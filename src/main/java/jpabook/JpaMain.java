@@ -14,10 +14,8 @@ public class JpaMain {
         EntityTransaction tx = em.getTransaction();
         tx.begin();
 
-        try{
-            //정상수행
-
-
+        try{//정상수행
+            //저장
 
             tx.commit();
         }catch (Exception e){

@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Item {
 
     @Id @GeneratedValue
-    @Column(name = "ITEM_ID")
+    @Column(name = "ITEM_ID") //DB는 예전에는 대소문자 구분이 없어서 _를 많이 사용했다.
     private Long id;
     private String name;
     private int price;          //가격
