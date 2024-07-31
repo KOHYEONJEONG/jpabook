@@ -10,8 +10,10 @@ public class Order {
     @Id @GeneratedValue
     @Column(name="ORDER_ID")
     private long id;
+
     @Column(name = "MEMBER_ID")
     private long memberId;
+
     private LocalDateTime orderDate;
 
     @Enumerated(EnumType.STRING)  //STRING으로 해주자, 기본타입 ORDINAL을 사용시 수선가 꼬인다.
