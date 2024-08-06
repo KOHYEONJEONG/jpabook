@@ -15,6 +15,8 @@ public class Member {
     private String name;
     private String city;
     private String street;
+
+    @Column(name = "ZIP_CODE")
     private String zipcode;
 
     //setter 만들때는 고심해봐야한다.
@@ -56,5 +58,8 @@ public class Member {
 
     public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
+    }
+
+    public Member() {
     }
 }

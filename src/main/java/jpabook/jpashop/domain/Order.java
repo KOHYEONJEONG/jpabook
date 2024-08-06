@@ -14,10 +14,18 @@ public class Order {
     @Column(name = "MEMBER_ID")
     private long memberId;
 
+    @Column(name = "ORDER_DATE")
     private LocalDateTime orderDate;
 
     @Enumerated(EnumType.STRING)  //STRING으로 해주자, 기본타입 ORDINAL을 사용시 수선가 꼬인다.
     private OrderStatus orderStatus;
+
+    //객체지향스럽게 조회
+    private Member member;
+
+    public Member getMember() {
+        return member;
+    }
 
     public long getId() {
         return id;

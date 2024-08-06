@@ -18,6 +18,7 @@ public class OrderItem {
     @Column(name = "ITEM_ID")
     private Long itmeId;
 
+    @Column(name = "ORDER_PRICE")
     private int orderPrice;
     private int count;
 
