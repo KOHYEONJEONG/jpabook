@@ -22,6 +22,11 @@ public class Order {
     @JoinColumn(name = "MEMBER_ID")
     private Member member;
 
+    // 딜리버리랑 1:1 관계
+    @OneToOne
+    @JoinColumn(name = "DELIVERY_ID")//연관관계 매칭
+    private Delivery delivery;
+
     @Column(name = "ORDER_DATE")
     private LocalDateTime orderDate;
 
